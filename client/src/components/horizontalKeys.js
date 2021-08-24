@@ -15,9 +15,9 @@ const HorizontalKeys = (props) => {
                 <LetterButton letter={"U"}/>
                 <LetterButton letter={"I"}/>
                 <LetterButton letter={"O"}/>
+                <LetterButton letter={"P"}/>
             </div>
             <div>
-                <LetterButton letter={"P"}/>
                 <LetterButton letter={"A"}/>
                 <LetterButton letter={"S"}/>
                 <LetterButton letter={"D"}/>
