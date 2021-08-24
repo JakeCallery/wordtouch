@@ -4,9 +4,9 @@ import '../styles/wordButton.css'
 const WordButton = ({word}) => {
 
     return (
-        <>
+        <div className={"word-button"}>
             <button>{word}</button>
-        </>
+        </div>
     )
 }
 

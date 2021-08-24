@@ -1,7 +1,8 @@
-.word-button {
+.letter-button {
 
 }
-.word-button button {
+
+.letter-button button {
     background: #1a1a1a;
     border: solid 1px;
     border-radius: 0.5rem;
@@ -9,4 +10,6 @@
     font-weight: bold;
     border-color: white;
     color: yellow;
+    font-size: 4rem;
+    margin: 1rem;
 }

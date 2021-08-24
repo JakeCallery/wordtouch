@@ -1,0 +1,9 @@
+.horizontal-keys {
+    width: 100%;
+}
+.horizontal-keys div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+

@@ -4,8 +4,8 @@ import '../styles/outputBar.css';
 const OutputBar = (props) => {
 
     return (
-        <div className={"outputBar"}>
-            <input className={"outputBar"} type="text"/>
+        <div className={"output-bar"}>
+            <input type="text"/>
         </div>
     )
 
