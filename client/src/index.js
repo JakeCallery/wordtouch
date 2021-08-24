@@ -7,12 +7,16 @@ import SuggestionArea from "./components/suggestionArea";
 
 const App = () => {
 
+    const onLetterClick = (letter) => {
+        console.log('Letter Clicked: ', letter)
+    }
+
     return (
         <div>
             <h1>App</h1>
             <OutputBar/>
             <SuggestionArea/>
-            <HorizontalKeys/>
+            <HorizontalKeys onLetterClick={onLetterClick}/>
         </div>
     )
 }

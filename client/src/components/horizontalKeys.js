@@ -6,36 +6,36 @@ const HorizontalKeys = (props) => {
     return (
         <div className={"horizontal-keys"}>
             <div>
-                <LetterButton letter={"Q"}/>
-                <LetterButton letter={"W"}/>
-                <LetterButton letter={"E"}/>
-                <LetterButton letter={"R"}/>
-                <LetterButton letter={"T"}/>
-                <LetterButton letter={"Y"}/>
-                <LetterButton letter={"U"}/>
-                <LetterButton letter={"I"}/>
-                <LetterButton letter={"O"}/>
-                <LetterButton letter={"P"}/>
+                <LetterButton letter={"Q"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"W"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"E"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"R"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"T"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"Y"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"U"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"I"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"O"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"P"} onLetterClick={props.onLetterClick}/>
             </div>
             <div>
-                <LetterButton letter={"A"}/>
-                <LetterButton letter={"S"}/>
-                <LetterButton letter={"D"}/>
-                <LetterButton letter={"F"}/>
-                <LetterButton letter={"G"}/>
-                <LetterButton letter={"H"}/>
-                <LetterButton letter={"J"}/>
-                <LetterButton letter={"K"}/>
-                <LetterButton letter={"L"}/>
+                <LetterButton letter={"A"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"S"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"D"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"F"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"G"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"H"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"J"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"K"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"L"} onLetterClick={props.onLetterClick}/>
             </div>
             <div>
-                <LetterButton letter={"Z"}/>
-                <LetterButton letter={"X"}/>
-                <LetterButton letter={"C"}/>
-                <LetterButton letter={"V"}/>
-                <LetterButton letter={"B"}/>
-                <LetterButton letter={"N"}/>
-                <LetterButton letter={"M"}/>
+                <LetterButton letter={"Z"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"X"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"C"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"V"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"B"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"N"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"M"} onLetterClick={props.onLetterClick}/>
             </div>
         </div>
 
