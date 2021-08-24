@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  yaptm:
+    image: sdweitzen/yap-tm
+    ports:
+      - '3838:3838' 
+    volumes:
+      - shiny-db:/srv/shiny-server
+
+volumes:
+  shiny-db:
