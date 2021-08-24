@@ -15,10 +15,14 @@ const App = () => {
         setFieldText(fieldText + letter);
     }
 
+    const onClearFieldClick = (evt) => {
+        setFieldText('');
+    }
+
     return (
         <div>
             <h1>App</h1>
-            <OutputBar fieldText={fieldText}/>
+            <OutputBar fieldText={fieldText} onClearFieldClick={onClearFieldClick}/>
             <SuggestionArea/>
             <HorizontalKeys onLetterClick={onLetterClick}/>
         </div>

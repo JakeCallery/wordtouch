@@ -1,0 +1,14 @@
+.clear-field-button {
+
+}
+
+.clear-field-button button {
+    border-radius: 1rem;
+    border: 0.1rem solid white;
+    background-color: black;
+    color: yellow;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
