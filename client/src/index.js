@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WordButton from "./components/wordButton";
 import OutputBar from "./components/outputBar";
 import './styles/app.css';
 import HorizontalKeys from "./components/horizontalKeys";
+import SuggestionArea from "./components/suggestionArea";
 
 const App = () => {
 
@@ -11,7 +11,7 @@ const App = () => {
         <div>
             <h1>App</h1>
             <OutputBar/>
-            <WordButton word={"TEST"}/>
+            <SuggestionArea/>
             <HorizontalKeys/>
         </div>
     )
