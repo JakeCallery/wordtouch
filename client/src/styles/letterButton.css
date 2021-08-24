@@ -3,6 +3,8 @@
 }
 
 .letter-button button {
+    height: 7rem;
+    width: 6rem;
     background: #1a1a1a;
     border: solid 1px;
     border-radius: 0.5rem;
@@ -11,5 +13,5 @@
     border-color: white;
     color: yellow;
     font-size: 4rem;
-    margin: 1rem;
+    margin: 0.7rem;
 }

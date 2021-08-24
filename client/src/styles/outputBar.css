@@ -6,10 +6,13 @@
 
 .output-bar input {
     border-radius: 0.8rem;
-    border: none;
+    border: 0.2rem solid white;
     display: block;
     width: 80%;
     background-color: black;
     color: yellow;
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    font-size: 5rem;
+    font-weight: bold;
+
 }
