@@ -1,0 +1,15 @@
+.outputBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.outputBar input {
+    border-radius: 0.8rem;
+    border: none;
+    display: block;
+    width: 80%;
+    background-color: black;
+    color: yellow;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
