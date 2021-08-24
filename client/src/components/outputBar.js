@@ -1,11 +1,11 @@
 import React from "react";
 import '../styles/outputBar.css';
 
-const OutputBar = (props) => {
+const OutputBar = ({fieldText}) => {
 
     return (
         <div className={"output-bar"}>
-            <input type="text"/>
+            <input readOnly type="text" value={fieldText}/>
         </div>
     )
 
