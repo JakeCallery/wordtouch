@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/horizontalKeys.css';
 import LetterButton from "./letterButton";
+import SpaceButton from "./spaceButton";
 
 const HorizontalKeys = (props) => {
     return (
@@ -36,6 +37,9 @@ const HorizontalKeys = (props) => {
                 <LetterButton letter={"B"} onLetterClick={props.onLetterClick}/>
                 <LetterButton letter={"N"} onLetterClick={props.onLetterClick}/>
                 <LetterButton letter={"M"} onLetterClick={props.onLetterClick}/>
+            </div>
+            <div>
+                <SpaceButton onLetterClick={props.onLetterClick}/>
             </div>
         </div>
 
