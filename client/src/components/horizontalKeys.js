@@ -7,6 +7,18 @@ const HorizontalKeys = (props) => {
     return (
         <div className={"horizontal-keys"}>
             <div>
+                <LetterButton letter={"1"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"2"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"3"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"4"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"5"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"6"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"7"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"8"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"9"} onLetterClick={props.onLetterClick}/>
+                <LetterButton letter={"0"} onLetterClick={props.onLetterClick}/>
+            </div>
+            <div>
                 <LetterButton letter={"Q"} onLetterClick={props.onLetterClick}/>
                 <LetterButton letter={"W"} onLetterClick={props.onLetterClick}/>
                 <LetterButton letter={"E"} onLetterClick={props.onLetterClick}/>
