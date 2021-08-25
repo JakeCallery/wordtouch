@@ -5,6 +5,7 @@ import './styles/app.css';
 import HorizontalKeys from "./components/horizontalKeys";
 import SuggestionArea from "./components/suggestionArea";
 import {useState} from "react";
+import QuickAccessArea from "./components/quckAccessArea";
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
             <h1>App</h1>
             <OutputBar fieldText={fieldText} onClearFieldClick={onClearFieldClick}/>
             <SuggestionArea/>
+            <QuickAccessArea/>
             <HorizontalKeys onLetterClick={onLetterClick}/>
         </div>
     )

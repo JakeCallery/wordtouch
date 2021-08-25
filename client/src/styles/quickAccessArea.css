@@ -1,7 +1,7 @@
-.suggestion-area {
-    display: block;
-    height: 30vh;
-    margin: 1.5rem 2rem;
+.quick-access-area {
     background-color: #1a1a1b;
+    display: block;
+    height: 10vh;
+    margin: 1.5rem 2rem;
     border-radius: 2rem;
 }
