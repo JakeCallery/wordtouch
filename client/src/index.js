@@ -6,6 +6,9 @@ import HorizontalKeys from "./components/horizontalKeys";
 import SuggestionArea from "./components/suggestionArea";
 import {useState} from "react";
 import QuickAccessArea from "./components/quckAccessArea";
+import Predictionary from "predictionary";
+
+const predictionary = Predictionary.instance();
 
 const App = () => {
 
@@ -21,10 +24,9 @@ const App = () => {
     }
 
     return (
-        <div>
-            <h1>App</h1>
+        <div className={"app"}>
             <OutputBar fieldText={fieldText} onClearFieldClick={onClearFieldClick}/>
-            <SuggestionArea/>
+            <SuggestionArea input={fieldText} predictionary={predictionary}/>
             <QuickAccessArea/>
             <HorizontalKeys onLetterClick={onLetterClick}/>
         </div>

@@ -8,3 +8,7 @@ html {
     font-size: 62.5%;
     background-color: #444444;
 }
+
+.app {
+    padding: 2rem 0 0 0;
+}

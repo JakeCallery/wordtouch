@@ -1,7 +1,14 @@
 .suggestion-area {
-    display: block;
+    display: flex;
     height: 30vh;
     margin: 1.5rem 2rem;
     background-color: #1a1a1b;
-    border-radius: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+}
+
+.suggestion-area h1 {
+    font-size: 8rem;
+    color: yellow;
 }
