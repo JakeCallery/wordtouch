@@ -1,0 +1,5 @@
+- Character cursor
+- Predict Next Word
+- "click" effect on words and letters
+- better touch/click detection
+  - ie. maybe only care about mouse up on letter in case of click/drag on same letter
