@@ -5,10 +5,7 @@
     background-color: #1a1a1b;
     border-radius: 1rem;
     padding: 1rem 2rem;
-
-}
-
-.suggestion-area h1 {
-    font-size: 8rem;
-    color: yellow;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: scroll;
 }

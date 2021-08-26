@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/suggestionArea.css'
 import {useState, useEffect} from "react";
 import axios from "axios";
+import SuggestedWord from "./suggestedWord";
 
 const SuggestionArea = ({predictionary, input}) => {
 
@@ -35,12 +36,13 @@ const SuggestionArea = ({predictionary, input}) => {
         setSuggestions(predictions);
     }, [input, predictionary]);
 
+    
     return (
         <div className={'suggestion-area'}>
             {isLoading && <h1>Loading...</h1>}
             {suggestions.map((word) => {
                 return(
-                    <h3>{word}</h3>
+                    <SuggestedWord word={word}/>
                 )
             }) }
         </div>
