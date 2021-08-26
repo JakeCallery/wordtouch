@@ -24,6 +24,7 @@ const App = () => {
     }
 
     const onWordClick = (word) => {
+        word = word.toUpperCase();
         if(fieldText[fieldText.length-1] === ' ') {
             //predicting next word
             setFieldText(fieldText + word + ' ');

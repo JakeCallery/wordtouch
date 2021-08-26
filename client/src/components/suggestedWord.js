@@ -4,7 +4,9 @@ import '../styles/suggestedWord.css';
 const SuggestedWord = ({word, onWordClick}) => {
 
     return (
-        <button onClick={(evt)=>{onWordClick(word);}} className={"suggested-word"}>{word}</button>
+        <button
+            onClick={(evt)=>{onWordClick(word);}}
+            className={"suggested-word"}>{word}</button>
     )
 }
 
