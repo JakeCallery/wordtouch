@@ -4,11 +4,11 @@ import ClearFieldButton from "./clearFieldButton";
 import ReactHtmlParser from 'react-html-parser';
 
 const OutputBar = ({fieldText, onClearFieldClick}) => {
-
+    fieldText = fieldText + "<span>|</span>";
     return (
         <div className={"output-bar"}>
             <div className={"output-bar-field"}>
-                { ReactHtmlParser(fieldText)}
+                { ReactHtmlParser(fieldText) }
             </div>
             <ClearFieldButton onClearFieldClick={onClearFieldClick}/>
         </div>

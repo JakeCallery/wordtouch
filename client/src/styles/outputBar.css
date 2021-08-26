@@ -13,4 +13,5 @@
     font-size: 5rem;
     font-weight: bold;
     width: 88vw;
+    overflow: scroll;
 }
