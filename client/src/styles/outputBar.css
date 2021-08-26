@@ -13,5 +13,7 @@
     font-size: 5rem;
     font-weight: bold;
     width: 88vw;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
