@@ -1,0 +1,12 @@
+.quick-access-word {
+    background: #1a1a1a;
+    border: solid 1px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    border-color: white;
+    color: yellow;
+    font-size: 4rem;
+    margin: 0.7rem;
+    text-align: center;
+}

@@ -35,11 +35,22 @@ const App = () => {
         }
     }
 
+    const quickAccessWordList = [
+        "?",
+        "!",
+        "pain",
+        "head",
+        "left",
+        "right",
+        "ear",
+        "throat",
+    ];
+
     return (
         <div className={"app"}>
             <OutputBar fieldText={fieldText} onClearFieldClick={onClearFieldClick}/>
             <SuggestionArea input={fieldText} predictionary={predictionary} onWordClick={onWordClick}/>
-            <QuickAccessArea/>
+            <QuickAccessArea wordList={quickAccessWordList} onWordClick={onWordClick}/>
             <HorizontalKeys onLetterClick={onLetterClick}/>
         </div>
     )
