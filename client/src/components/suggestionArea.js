@@ -4,7 +4,7 @@ import {useState, useEffect} from "react";
 import axios from "axios";
 import SuggestedWord from "./suggestedWord";
 
-const SuggestionArea = ({predictionary, input}) => {
+const SuggestionArea = ({predictionary, input, onWordClick}) => {
 
     const BASE_DICT = 'BASE_DICT';
 
@@ -36,13 +36,13 @@ const SuggestionArea = ({predictionary, input}) => {
         setSuggestions(predictions);
     }, [input, predictionary]);
 
-    
+
     return (
         <div className={'suggestion-area'}>
             {isLoading && <h1>Loading...</h1>}
             {suggestions.map((word) => {
                 return(
-                    <SuggestedWord word={word}/>
+                    <SuggestedWord word={word} onWordClick={onWordClick}/>
                 )
             }) }
         </div>

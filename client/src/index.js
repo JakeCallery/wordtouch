@@ -23,10 +23,22 @@ const App = () => {
         setFieldText('');
     }
 
+    const onWordClick = (word) => {
+        if(fieldText[fieldText.length-1] === ' ') {
+            //predicting next word
+            setFieldText(fieldText + word + ' ');
+        } else {
+            //completing word
+            let tokens = fieldText.split(' ');
+            tokens[tokens.length-1] = word;
+            setFieldText(tokens.join(' ') + ' ');
+        }
+    }
+
     return (
         <div className={"app"}>
             <OutputBar fieldText={fieldText} onClearFieldClick={onClearFieldClick}/>
-            <SuggestionArea input={fieldText} predictionary={predictionary}/>
+            <SuggestionArea input={fieldText} predictionary={predictionary} onWordClick={onWordClick}/>
             <QuickAccessArea/>
             <HorizontalKeys onLetterClick={onLetterClick}/>
         </div>
