@@ -27,6 +27,6 @@
 
 #cursor {
     color: white;
-    animation: cursorBlink 1s infinite;
+    animation: cursorBlink 1.2s infinite;
 
 }
