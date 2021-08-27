@@ -24,7 +24,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 8.4vh 30vh 11vh 45vh;
+    grid-template-rows: 8.4vh 30vh 8vh 45vh;
     grid-template-columns: 90vw;
     justify-content: center;
 

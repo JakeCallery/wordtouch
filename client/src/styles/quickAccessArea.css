@@ -1,7 +1,6 @@
 .quick-access-area {
     display: flex;
     background-color: #1a1a1b;
-    height: 10vh;
     border-radius: 1rem;
     overflow-x: scroll;
     margin: 0.5rem 0;

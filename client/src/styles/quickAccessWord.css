@@ -2,11 +2,11 @@
     background: #1a1a1a;
     border: solid 1px;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 0 0.6rem;
     font-weight: bold;
     border-color: white;
     color: yellow;
     font-size: 4rem;
-    margin: 0.7rem;
+    margin: 0.2rem 0.7rem;
     text-align: center;
 }
