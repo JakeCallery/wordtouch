@@ -2,7 +2,6 @@
     display: flex;
     background-color: #1a1a1b;
     height: 10vh;
-    margin: 1.5rem 2rem;
     border-radius: 1rem;
-    overflow: scroll;
+    overflow-x: scroll;
 }

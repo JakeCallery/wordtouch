@@ -7,7 +7,9 @@ import SuggestionArea from "./components/suggestionArea";
 import {useState} from "react";
 import QuickAccessArea from "./components/quckAccessArea";
 import Predictionary from "predictionary";
+import { setVisibleHeight } from 'visible-height-css'
 
+setVisibleHeight('vih')
 const predictionary = Predictionary.instance();
 
 const App = () => {

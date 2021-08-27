@@ -6,9 +6,19 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
     background-color: #444444;
+}
+body {
+    overflow: hidden;
+}
+
+#root {
 }
 
 .app {
-    padding: 2rem 0 0 0;
+    display: grid;
+    grid-template-rows: 8.4vh 30vh 10vh 45vh;
+    grid-template-columns: 100vw;
+
 }

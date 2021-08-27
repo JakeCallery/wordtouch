@@ -1,11 +1,11 @@
 .suggestion-area {
     display: flex;
-    height: 30vh;
-    margin: 1.5rem 2rem;
+    margin: 0 0;
     background-color: #1a1a1b;
     border-radius: 1rem;
     padding: 1rem 2rem;
     flex-wrap: wrap;
     align-content: flex-start;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }

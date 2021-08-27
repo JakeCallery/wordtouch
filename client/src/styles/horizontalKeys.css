@@ -1,6 +1,6 @@
 .horizontal-keys {
+    overflow: hidden;
     width: 100%;
-
 }
 .horizontal-keys div{
     display: flex;

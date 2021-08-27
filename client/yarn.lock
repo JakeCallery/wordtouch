@@ -10947,6 +10947,11 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+visible-height-css@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/visible-height-css/-/visible-height-css-1.0.0.tgz#318c610663d5d06f89b209668565e2cf7ebb296e"
+  integrity sha512-4GbNrUANcJEBIG3yJVB08Ae//3xtjxgdiY4kAMw1bTSLlt5Ht5H9Vw69Y++0a65mjGyiZf7sVUAmzm+GObf77g==
+
 vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"

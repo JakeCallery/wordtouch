@@ -1,6 +1,7 @@
 .output-bar {
     display: flex;
-    margin: 0.5rem 1.5rem 0.5rem 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .output-bar-field {
@@ -16,4 +17,16 @@
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+}
+
+@keyframes cursorBlink {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+
+#cursor {
+    color: white;
+    animation: cursorBlink 1s infinite;
+
 }
