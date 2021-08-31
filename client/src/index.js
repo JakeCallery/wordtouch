@@ -8,6 +8,7 @@ import {useState} from "react";
 import QuickAccessArea from "./components/quckAccessArea";
 import Predictionary from "predictionary";
 import { setVisibleHeight } from 'visible-height-css'
+import SpeechElement from "./components/speechElement";
 
 setVisibleHeight('vih')
 const predictionary = Predictionary.instance();
@@ -23,10 +24,23 @@ const App = () => {
     }
 
     const [fieldText, setFieldText] = useState("");
+    const [wordToSpeak, setWordToSpeak] = useState("");
+
+    const updateWordToSpeak = (word) => {
+        setWordToSpeak(word);
+        setWordToSpeak("");
+    };
 
     const onLetterClick = (letter) => {
         console.log('Letter Clicked: ', letter)
         setFieldText(fieldText + letter);
+
+        if(letter === " ") {
+            let tokens = fieldText.trim().split();
+            let word = tokens[tokens.length-1];
+            console.log("Setting Word to Speak: " + word);
+            updateWordToSpeak(word);
+        }
     }
 
     const onClearFieldClick = (evt) => {
@@ -44,6 +58,9 @@ const App = () => {
             tokens[tokens.length-1] = word;
             setFieldText(tokens.join(' ') + ' ');
         }
+
+        console.log("Setting Word to Speak: " + word);
+        updateWordToSpeak(word);
     }
 
     const onBackspaceClick = (evt) => {
@@ -62,6 +79,7 @@ const App = () => {
         }
     }
 
+
     const quickAccessWordList = [
         "?",
         "!",
@@ -75,6 +93,7 @@ const App = () => {
 
     return (
         <div className={"app"}>
+            <SpeechElement wordToSpeak={wordToSpeak} />
             <OutputBar
                 fieldText={fieldText}
                 onClearFieldClick={onClearFieldClick}
