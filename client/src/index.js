@@ -28,7 +28,7 @@ const App = () => {
 
     const updateWordToSpeak = (word) => {
         setWordToSpeak(word);
-        setWordToSpeak("");
+        //setWordToSpeak("");
     };
 
     const onLetterClick = (letter) => {

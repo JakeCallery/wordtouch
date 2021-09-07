@@ -40,9 +40,9 @@ const SuggestionArea = ({predictionary, input, onWordClick}) => {
     return (
         <div className={'suggestion-area'}>
             {isLoading && <h1>Loading...</h1>}
-            {suggestions.map((word) => {
+            {suggestions.map((word, index) => {
                 return(
-                    <SuggestedWord word={word} onWordClick={onWordClick}/>
+                    <SuggestedWord key={index} word={word} onWordClick={onWordClick}/>
                 )
             }) }
         </div>
