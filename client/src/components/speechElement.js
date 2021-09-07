@@ -1,14 +1,18 @@
-import {createRef} from "react";
+import {createRef, useEffect, useState} from "react";
 import '../styles/audioElement.css';
 
 const SpeechElement = ({wordToSpeak}) => {
 
     const audioElement = createRef();
 
-    if(wordToSpeak !== "") {
-        //TODO: Make call to server to synth word
-        console.log("Speaking " + wordToSpeak);
-    }
+    useEffect(() => {
+        if(wordToSpeak !== "") {
+            //TODO: Make call to server to synth word
+            console.log("Speaking " + wordToSpeak);
+        }
+    },[wordToSpeak])
+
+
 
     return (
         <div className={"audio-element"}>
