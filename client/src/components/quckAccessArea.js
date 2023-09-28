@@ -4,9 +4,9 @@ import QuickAccessWord from "./quickAccessWord";
 const QuickAccessArea = ({wordList, onWordClick}) => {
     return(
         <div className={"quick-access-area"}>
-            {wordList.map((word) => {
+            {wordList.map((word, index) => {
                 return (
-                    <QuickAccessWord word={word} onWordClick={onWordClick}/>
+                    <QuickAccessWord key={index} word={word} onWordClick={onWordClick}/>
                 )
             })}
         </div>
